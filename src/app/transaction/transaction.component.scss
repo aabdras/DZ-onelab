@@ -1,0 +1,189 @@
+.info-balance{
+  display: flex;
+  padding: 0 10px;
+.total{
+  font-size: 80px;
+  color: #444444;
+  padding-left: 40vw;
+}
+  .balance{
+    color: #444444;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .balance-text{
+
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    .balance-date{
+
+      font-size: 20px;
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+
+.content {
+  display: flex;
+  justify-content: left;
+
+  .operation {
+    padding: 20px 50px;
+
+    .transfer {
+      background-color: #ffb003;
+      border-radius: 8px;
+      height: 12vh;
+      width: 25vw;
+      padding: 2em 2em 2em 2em;
+      margin: 1vh 1vw;
+
+      .transfer-text {
+        font-weight: bold;
+        font-size: 17px;
+        font-family: sans-serif;
+      }
+
+      .transfer_money {
+        display: grid;
+        grid-template-columns: 10vw 10vw 5vw;
+
+        input {
+          background-color: #FFFFFF66;
+          border: none;
+          margin: 0 5px 0 5px;
+          border-radius: 8px;
+        }
+
+        button {
+          border-radius: 8px;
+        }
+
+        label {
+          margin: 4px 10px 0 10px;
+          color: #333333;
+          font-family: Arial, serif;
+          font-size: 14px;
+        }
+      }
+    }
+    .loan {
+      background-color: #39b385;
+      border-radius: 8px;
+      height: 12vh;
+      width: 25vw;
+      padding: 2em 2em 2em 2em;
+      margin: 1vh 1vw;
+
+      .loan-text {
+        font-weight: bold;
+        font-size: 17px;
+        font-family: sans-serif;
+      }
+
+      .loan_money {
+        display: grid;
+        grid-template-columns: 10vw  5vw;
+
+        input {
+          background-color: #FFFFFF66;
+          border: none;
+          margin: 0 5px 0 5px;
+          border-radius: 8px;
+        }
+
+        button {
+          border-radius: 8px;
+        }
+
+        label {
+          margin: 4px 10px 0 10px;
+          color: #333333;
+          font-family: Arial, serif;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .close-acc {
+      background-color: #e52a5a;
+      border-radius: 8px;
+      height: 12vh;
+      width: 25vw;
+      padding: 2em 2em 2em 2em;
+      margin: 1vh 1vw;
+
+      .close-acc-text {
+        font-weight: bold;
+        font-size: 17px;
+        font-family: sans-serif;
+      }
+
+      .close-acc-form {
+        display: grid;
+        grid-template-columns: 10vw 10vw 5vw;
+
+        input {
+          background-color: #FFFFFF66;
+          border: none;
+          margin: 0 5px 0 5px;
+          border-radius: 8px;
+        }
+
+        button {
+          border-radius: 8px;
+        }
+
+        label {
+          margin: 4px 10px 0 10px;
+          color: #333333;
+          font-family: Arial, serif;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .history {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    div {
+      .movements {
+        color: #444444;
+        font-size: 17px;
+        font-family: sans-serif;
+      }
+
+      .date {
+        color: #444444;
+        font-size: 17px;
+        font-family: sans-serif;
+      }
+
+      .type-DEPOSIT {
+        background-color: #9be15d;
+        color: #444444;
+        font-size: 17px;
+        font-family: sans-serif;
+        border-radius: 8px;
+      }
+
+      .type-WITHDRAWAL {
+        background-color: #ff585f;
+        color: #444444;
+        font-size: 17px;
+        font-family: sans-serif;
+        border-radius: 8px;
+      }
+
+    }
+  }
+
+}
+

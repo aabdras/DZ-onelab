@@ -1,0 +1,57 @@
+<div class="info-balance">
+  <div class="balance">
+    <p class="balance-text">
+      Current balance
+    </p>
+    <p class="balance-date">
+      As {{date}}
+    </p>
+  </div>
+  <div>
+    <p class="total">
+      {{balance()}} €
+    </p>
+  </div>
+</div>
+
+<div class="content">
+  <div class="history" >
+    <div> <p class="type-{{item}}" *ngFor="let item of movementsType">{{item}}</p></div>
+    <div> <p class="date" *ngFor="let item of movementsDates">{{item}}</p></div>
+    <div><p class="movements" *ngFor="let item of info">{{item}} €</p></div>
+  </div>
+
+  <div class="operation">
+    <div class="transfer">
+      <p class="transfer-text">Transfer money</p>
+      <form #myForm="ngForm" class="transfer_money">
+        <input type="text" name="transfer_to" [(ngModel)]="tranfer_to">
+        <input type="number" name="amount" [(ngModel)]="sum">
+        <button (click)="transfer_money(tranfer_to,sum )">→</button>
+        <label>Transfer to</label>
+        <label> Amount </label>
+      </form>
+    </div>
+    <div class="loan">
+      <p class="loan-text">Request loan</p>
+      <form #myForm="ngForm" class="loan_money">
+        <input name="amount" [(ngModel)]="amount" placeholder="0">
+        <button (click)="loan(amount)">→</button>
+        <label> Amount </label>
+      </form>
+    </div>
+
+    <div class="close-acc">
+      <p class="close-acc-text">Close account</p>
+      <form #myForm="ngForm" class="close-acc-form">
+        <input name="acc" [(ngModel)]="acc" >
+        <input name="pin" [(ngModel)]="pin">
+        <button (click)="close_account(acc, pin)">→</button>
+        <label>Confirm user</label>
+        <label> Confirm PIN </label>
+      </form>
+    </div>
+  </div>
+</div>
+
+

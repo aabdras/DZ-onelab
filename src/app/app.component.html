@@ -1,0 +1,15 @@
+<div class="header">
+  <p>{{text}}</p>
+  <img src="assets/logo.png" alt="logo">
+  <form #myForm="ngForm" class="login" >
+    <input type="text" name="name" [(ngModel)]="user_acc.login" placeholder="login" *ngIf="!check"/>
+    <input type="text" name="password"  [(ngModel)]="user_acc.password" placeholder="PIN" *ngIf="!check"/>
+    <button (click)="login()" *ngIf="!check">→</button>
+    <button (click)="logout()" *ngIf="check">logout</button>
+  </form>
+</div>
+<div class="content" *ngIf="check">
+  <app-transaction [login]="user_acc.login"></app-transaction>
+</div>
+
+
